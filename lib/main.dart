@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import 'package:amazon_clone/components/category.dart';
+=======
+import 'package:amazon_clone/components/nav_bar.dart';
+>>>>>>> c63db25 (Creating a NavigatorBar)
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +16,11 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
+<<<<<<< HEAD
         
+=======
+        body: NavBar(),
+>>>>>>> c63db25 (Creating a NavigatorBar)
       ),
     );
   }
