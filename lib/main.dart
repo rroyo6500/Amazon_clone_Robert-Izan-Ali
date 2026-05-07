@@ -1,4 +1,5 @@
 import 'package:amazon_clone/components/nav_bar.dart';
+import 'package:amazon_clone/components/category.dart';
 import 'package:flutter/material.dart';
 
 void main() {
