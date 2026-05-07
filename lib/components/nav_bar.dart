@@ -14,6 +14,12 @@ class NavBar extends StatelessWidget {
             height: 65,
             width: double.infinity,
             color: Color.fromARGB(255, 15, 25, 30), //#0F191E
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+              ],
+            ),
           ),
           Container(
             height: 35,
