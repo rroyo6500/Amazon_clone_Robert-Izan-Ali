@@ -1,3 +1,5 @@
+import 'package:amazon_clone/components/NavBarComponents/amazon_search_bar.dart';
+import 'package:amazon_clone/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
@@ -13,10 +15,123 @@ class NavBar extends StatelessWidget {
           Container(
             height: 65,
             width: double.infinity,
-            color: Color.fromARGB(255, 15, 25, 30), //#0F191E
+            color: CustomColors.navBarUp, //#0F191E
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                Image(
+                  image: Image.asset("lib/assets/images/amazon_logo.png").image,
+                ),
+
+                Row(
+                  children: [
+                    Icon(Icons.location_on, color: Colors.white, size: 20),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Entrega en Barcelona 08001",
+                          style: TextStyle(color: Colors.white, fontSize: 10),
+                        ),
+                        Text(
+                          "Actualizar Ubicación",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+
+                AmazonSearchBar(
+                  width: MediaQuery.widthOf(context) * 0.4,
+                  height: 35,
+                ),
+
+                Row(
+                  children: [
+                    Image(
+                      image: Image.asset(
+                        "lib/assets/images/bandera_espana_pequena.png",
+                      ).image,
+                      height: 20,
+                    ),
+                    Text(
+                      "ES",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Icon(Icons.arrow_drop_down, color: Colors.white, size: 15),
+                  ],
+                ),
+
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Hola, identifícate",
+                      style: TextStyle(color: Colors.white, fontSize: 10),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Cuenta y Listas",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_drop_down,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Devoluciones",
+                      style: TextStyle(color: Colors.white, fontSize: 10),
+                    ),
+                    Text(
+                      "y Pedidos",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+
+                Row(
+                  children: [
+                    Icon(Icons.shopping_cart_outlined, color: Colors.white, size: 20),
+                    Text(
+                      "Cesta",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
 
               ],
             ),
@@ -24,7 +139,7 @@ class NavBar extends StatelessWidget {
           Container(
             height: 35,
             width: double.infinity,
-            color: Color.fromARGB(255, 35, 45, 60), //#232D3C
+            color: CustomColors.navBarDown, //#232D3C
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -130,7 +245,7 @@ class NavBar extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            
+
                             Row(
                               children: [
                                 Text(
@@ -155,8 +270,6 @@ class NavBar extends StatelessWidget {
                                 fontSize: 10,
                               ),
                             ),
-
-
                           ],
                         ),
                       ),
