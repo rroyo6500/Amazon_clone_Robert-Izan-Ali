@@ -1,5 +1,4 @@
-import 'package:amazon_clone/components/nav_bar.dart';
-import 'package:amazon_clone/components/category.dart';
+import 'package:amazon_clone/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: NavBar(),
+        body: WelcomePage(),
       ),
     );
   }
