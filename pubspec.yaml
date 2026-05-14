@@ -18,4 +18,44 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - lib/images/
+    - lib/assets/images/
+    
+  fonts:
+
+    - family: AmazonEmber
+      fonts:
+        - asset: lib/assets/fonts/AmazonEmber_Th.ttf
+          weight: 100
+        - asset: lib/assets/fonts/AmazonEmber_ThIt.ttf
+          weight: 100
+          style: italic
+
+        - asset: lib/assets/fonts/AmazonEmber_Lt.ttf
+          weight: 300
+        - asset: lib/assets/fonts/AmazonEmber_LtIt.ttf
+          weight: 300
+          style: italic
+
+        - asset: lib/assets/fonts/AmazonEmber_Rg.ttf
+          weight: 400
+        - asset: lib/assets/fonts/AmazonEmber_RgIt.ttf
+          weight: 400
+          style: italic
+
+        - asset: lib/assets/fonts/Amazon-Ember-Medium.ttf
+          weight: 500
+        - asset: lib/assets/fonts/Amazon-Ember-MediumItalic.ttf
+          weight: 500
+          style: italic
+
+        - asset: lib/assets/fonts/AmazonEmber_Bd.ttf
+          weight: 700
+        - asset: lib/assets/fonts/AmazonEmber_BdIt.ttf
+          weight: 700
+          style: italic
+
+        - asset: lib/assets/fonts/AmazonEmber_He.ttf
+          weight: 900
+        - asset: lib/assets/fonts/AmazonEmber_HeIt.ttf
+          weight: 900
+          style: italic
